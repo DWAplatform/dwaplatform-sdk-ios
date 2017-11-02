@@ -24,8 +24,6 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC DWAplatform SDK for iOS
-                   DESC
 
   s.homepage     = "https://github.com/DWAplatform/dwaplatform-sdk-ios"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
