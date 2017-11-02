@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4888D5A84CD89F020F464022 /* Pods_DWAplatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */; };
+		5EC20DD7FD7DDE9D299110F5 /* Pods_DWAplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */; };
 		BF1D5A491FAB5BD500D21566 /* DWAplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D5A3F1FAB5BD500D21566 /* DWAplatform.framework */; };
 		BF1D5A4E1FAB5BD500D21566 /* DWAplatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D5A4D1FAB5BD500D21566 /* DWAplatformTests.swift */; };
 		BF1D5A501FAB5BD500D21566 /* DWAplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1D5A421FAB5BD500D21566 /* DWAplatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWAplatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWAplatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		591C9A5979F0AA116B3D31D2 /* Pods-DWAplatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatform/Pods-DWAplatform.debug.xcconfig"; sourceTree = "<group>"; };
+		6167DF79194ADAAD275106FB /* Pods-DWAplatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F7CA881489DC6A2F280C5F6 /* Pods-DWAplatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCD6C662BF44B2D8295C06D8 /* Pods-DWAplatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatform/Pods-DWAplatform.release.xcconfig"; sourceTree = "<group>"; };
 		BF1D5A3F1FAB5BD500D21566 /* DWAplatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DWAplatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1D5A421FAB5BD500D21566 /* DWAplatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAplatform.h; sourceTree = "<group>"; };
 		BF1D5A431FAB5BD500D21566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC20DD7FD7DDE9D299110F5 /* Pods_DWAplatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +65,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1D5A491FAB5BD500D21566 /* DWAplatform.framework in Frameworks */,
+				4888D5A84CD89F020F464022 /* Pods_DWAplatformTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C22820B961C415705438156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */,
+				4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5E578ADFC4DCC37BEA6CE25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				591C9A5979F0AA116B3D31D2 /* Pods-DWAplatform.debug.xcconfig */,
+				BCD6C662BF44B2D8295C06D8 /* Pods-DWAplatform.release.xcconfig */,
+				6F7CA881489DC6A2F280C5F6 /* Pods-DWAplatformTests.debug.xcconfig */,
+				6167DF79194ADAAD275106FB /* Pods-DWAplatformTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF1D5A351FAB5BD500D21566 = {
 			isa = PBXGroup;
 			children = (
 				BF1D5A411FAB5BD500D21566 /* DWAplatform */,
 				BF1D5A4C1FAB5BD500D21566 /* DWAplatformTests */,
 				BF1D5A401FAB5BD500D21566 /* Products */,
+				B5E578ADFC4DCC37BEA6CE25 /* Pods */,
+				3C22820B961C415705438156 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,10 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF1D5A531FAB5BD500D21566 /* Build configuration list for PBXNativeTarget "DWAplatform" */;
 			buildPhases = (
+				7C812A767EC0C038F6F93308 /* [CP] Check Pods Manifest.lock */,
 				BF1D5A3A1FAB5BD500D21566 /* Sources */,
 				BF1D5A3B1FAB5BD500D21566 /* Frameworks */,
 				BF1D5A3C1FAB5BD500D21566 /* Headers */,
 				BF1D5A3D1FAB5BD500D21566 /* Resources */,
+				B3DA119BE64943FB5BF6ADF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF1D5A561FAB5BD500D21566 /* Build configuration list for PBXNativeTarget "DWAplatformTests" */;
 			buildPhases = (
+				DF8600920828B7969D4CC928 /* [CP] Check Pods Manifest.lock */,
 				BF1D5A441FAB5BD500D21566 /* Sources */,
 				BF1D5A451FAB5BD500D21566 /* Frameworks */,
 				BF1D5A461FAB5BD500D21566 /* Resources */,
+				8E919D5B8B4AAA4B69AE3D08 /* [CP] Embed Pods Frameworks */,
+				8F95FEB64F8E7179ECB782A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +269,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C812A767EC0C038F6F93308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E919D5B8B4AAA4B69AE3D08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F95FEB64F8E7179ECB782A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3DA119BE64943FB5BF6ADF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DWAplatform/Pods-DWAplatform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8600920828B7969D4CC928 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF1D5A3A1FAB5BD500D21566 /* Sources */ = {
@@ -381,6 +496,7 @@
 		};
 		BF1D5A541FAB5BD500D21566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591C9A5979F0AA116B3D31D2 /* Pods-DWAplatform.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +518,7 @@
 		};
 		BF1D5A551FAB5BD500D21566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD6C662BF44B2D8295C06D8 /* Pods-DWAplatform.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -423,6 +540,7 @@
 		};
 		BF1D5A571FAB5BD500D21566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7CA881489DC6A2F280C5F6 /* Pods-DWAplatformTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +556,7 @@
 		};
 		BF1D5A581FAB5BD500D21566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6167DF79194ADAAD275106FB /* Pods-DWAplatformTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,11 @@
+build/*
+Tests/build/*
+
+*.pbxuser
+.idea
+
+.DS_Store
+profile
+DerivedData
+
+xcuserdata/
