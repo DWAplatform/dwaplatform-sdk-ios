@@ -1,11 +1,3 @@
-//
-//  DWAplatform.h
-//  DWAplatform
-//
-//  Created by ingrid on 02/11/17.
-//  Copyright © 2017 DWAplatform. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for DWAplatform.

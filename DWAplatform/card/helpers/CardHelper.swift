@@ -1,14 +1,9 @@
-//
-//  CardHelper.swift
-//  DWApay
-//
-//  Created by Tiziano Cappellari on 30/10/2017.
-//  Copyright © 2017 Tiziano Cappellari. All rights reserved.
-//
-
 import Foundation
 
-
+/**
+ * Card helper class.
+ * Check card data validity and create card number alias.
+ */
 class CardHelper {
     func generateAlias(cardNumber: String) -> String {
         let indexTo = cardNumber.index(cardNumber.startIndex, offsetBy: 6)

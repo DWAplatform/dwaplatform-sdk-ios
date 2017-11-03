@@ -1,22 +1,17 @@
-//
-//  Card.swift
-//  DWApay
-//
-//  Created by Tiziano Cappellari on 31/10/2017.
-//  Copyright © 2017 Tiziano Cappellari. All rights reserved.
-//
-
 import Foundation
 
-struct Card {
-    let id: String?
-    let alias: String?
-    let expiration: String?
-    let currency: String?
-    let defaultValue: Bool?
-    let status: String?
-    let token: String?
-    let create: Date?
+/**
+ *Card data model
+ */
+public struct Card {
+    public let id: String?
+    public let alias: String?
+    public let expiration: String?
+    public let currency: String?
+    public let defaultValue: Bool?
+    public let status: String?
+    public let token: String?
+    public let create: Date?
     
     init(id: String?, alias: String?, expiration: String?, currency: String?, defaultValue: Bool?, status: String?, token: String?, create: Date?) {
         self.id = id

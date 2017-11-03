@@ -1,11 +1,3 @@
-//
-//  CardAPI.swift
-//  DWApay
-//
-//  Created by Tiziano Cappellari on 30/10/2017.
-//  Copyright © 2017 Tiziano Cappellari. All rights reserved.
-//
-
 import Foundation
 
 extension URLRequest {
@@ -14,13 +6,16 @@ extension URLRequest {
     }
 }
 
-
-class CardAPI {
+/**
+ * Main class for API communication with DWAplatform to handle Cards.
+ * Please use DWAplatform to get Card API instance; do not create directly
+ *
+ */
+public class CardAPI {
     private lazy var session: SessionProtocol = URLSession.shared
     
     private func getURL(path: String) -> String {
-//        return "\(DWApayAPI.HOST_URL)\(DWApayAPI.HOST_IP)\(path)"
-        return ""
+        return "https://\(hostName)\(path)"
     }
     
     private struct CardRegistration{
@@ -62,7 +57,16 @@ class CardAPI {
         self.sandbox = sandbox
     }
     
-    func createCreditCard(token: String,
+    /**
+     *  Register a Card. Use this method to register a user card and PLEASE DO NOT save card information on your own client or server side.
+     *
+     *  @param token token returned from DWAplatform to the create card request.
+     *  @param cardNumber 16 digits user card number, without spaces or dashes
+     *  @param expiration card expiration date in MMYY format
+     *  @param cxv  3 digit cxv card number
+     *  @param completionHandler callback called after the server communication is done and containing a Card object or an Exception in case of error.
+     */
+    public func createCreditCard(token: String,
                           cardNumber: String,
                           expiration: String,
                           cxv: String,
@@ -95,6 +99,14 @@ class CardAPI {
         }
     }
     
+    /**
+     * Create a new registration card request, to obtain data useful to send to the card tokenizer service
+     *
+     * @param token dwaplatform token as get from create card post request
+     * @param alias card number alias
+     * @param expiration card expiration
+     * @param completionHandler callback containing card registration object
+     */
     private func postCardRegister(token: String, alias: String, expiration: String,
     completionHandler: @escaping (CardRegistration?, Error?) -> Void) {
         
@@ -178,6 +190,13 @@ class CardAPI {
         }
     }
     
+    /**
+     * Send card registration to card tokenizer service
+     *
+     * @param card actual card data to tokenize
+     * @param cardRegistration card registration data to authorize the tokenization
+     * @param completionHandler callback containing registration key
+     */
     private func postCardRegistrationData(card: CardToRegister, cardRegistration: CardRegistration, completionHandler: @escaping (String?, Error?) -> Void) {
         
         let data = "data=\(cardRegistration.preregistrationData)&accessKeyRef=\(cardRegistration.accessKey)&cardNumber=\(card.cardNumber)&cardExpirationDate=\(card.expiration)&cardCvx=\(card.cvx)"
@@ -217,7 +236,13 @@ class CardAPI {
         }.resume()
     }
     
-    
+    /**
+     * Complete card registration process.
+     * @param token dwaplatform token as get from create card post request
+     * @param cardRegistrationId univoke id obtained from card registration process
+     * @param registration registration key obtained from tokenizer service
+     * @param completionHandler callback containing the Card object
+     */
     private func putRegisterCard(token: String, cardRegistrationId: String, registration: String, completionHandler: @escaping (Card?, Error?) -> Void) {
         
         do {
@@ -337,6 +362,13 @@ class CardAPI {
         }
     }
     
+    /**
+     * Get Test Card data to use on sandbox environment.
+     * If not in sandbox, will be returned the card dato get from cardFrom parameter.
+     *
+     * @param cardFrom original card data, to use only in production environment
+     * @param completionHandler callback containing the card data to use for registration.
+     */
     private func getCardSafe(cardFrom: CardToRegister, completionHandler: @escaping (CardToRegister?, Error?) -> Void) {
     
         if (!sandbox) {
@@ -420,7 +452,7 @@ protocol SessionProtocol {
 
 extension URLSession: SessionProtocol {}
 
-enum WebserviceError : Error {
+public enum WebserviceError : Error {
     case DataEmptyError
     case NoHTTPURLResponse
     case StatusCodeNotSuccess
