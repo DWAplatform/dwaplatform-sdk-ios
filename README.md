@@ -17,7 +17,7 @@ $ gem install cocoapods
 To integrate DWAplatform into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-    pod 'DWAplatform', '~> 1.0.0'
+    pod 'DWAplatform', '~> 1.1.1'
 ```
 
 Then, run the following command:
@@ -62,7 +62,7 @@ Sample usage in Swift
     let cxv = "123"
 
     do {
-        try cardAPI.createCreditCard(token: token, cardNumber: cardNumber, expiration: expiration, cxv: cxv) {(card, e) in
+        try cardAPI.registerCard(token: token, cardNumber: cardNumber, expiration: expiration, cxv: cxv) {(card, e) in
             if let error = e {
                 // error handler
                 print(error)
