@@ -79,9 +79,7 @@ public class DWAplatform {
     }
 
     private func buildCardAPI(hostName: String, sandbox: Bool) -> CardAPI {
-        return CardAPI(hostName: hostName,
-                       sanityCheck: SanityCheck(),
-                       cardHelper: CardHelper(),
-                       sandbox: sandbox)
+        return CardAPI(restApi: CardRestAPI(hostName: hostName, sandbox: sandbox),
+                       cardHelper: CardHelper(sanityCheck: SanityCheck()))
     }
 }

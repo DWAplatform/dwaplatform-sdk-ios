@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "DWAplatform"
-  s.version               = "1.0.2"
+  s.version               = "1.1.0"
   s.summary               = "DWAplatform SDK for iOS."
   s.homepage              = "https://github.com/DWAplatform/dwaplatform-sdk-ios"
   s.license               = { :type => "MIT", :file => "LICENSE" }

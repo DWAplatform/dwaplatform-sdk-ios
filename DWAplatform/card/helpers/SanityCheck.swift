@@ -11,7 +11,7 @@ public class SanityCheck {
     * @return all items that fail the check
     */
     public func check(items: [SanityItem]) -> [SanityItem] {
-        return items.filter {it in
+        return items.filter { it in
             let regex = try! NSRegularExpression(pattern: it.regExp, options: [])
         
             let matches = regex.matches(in: it.value, options: [], range: NSRange(location: 0, length: it.value.characters.count))
@@ -43,5 +43,12 @@ public struct SanityItem {
     var field: String
     var value: String
     var regExp: String
+    
 }
 
+extension SanityItem: Equatable {}
+public func ==(lhs: SanityItem, rhs: SanityItem) -> Bool {
+    return lhs.field == rhs.field &&
+    lhs.value == rhs.value &&
+    lhs.regExp == rhs.regExp
+}

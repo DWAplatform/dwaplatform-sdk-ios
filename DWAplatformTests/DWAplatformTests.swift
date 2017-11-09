@@ -1,11 +1,3 @@
-//
-//  DWAplatformTests.swift
-//  DWAplatformTests
-//
-//  Created by ingrid on 02/11/17.
-//  Copyright © 2017 DWAplatform. All rights reserved.
-//
-
 import XCTest
 @testable import DWAplatform
 

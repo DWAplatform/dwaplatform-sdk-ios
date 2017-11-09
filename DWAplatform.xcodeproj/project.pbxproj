@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4888D5A84CD89F020F464022 /* Pods_DWAplatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */; };
-		5EC20DD7FD7DDE9D299110F5 /* Pods_DWAplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */; };
+		B492C1DC1FB1B9310012D7C4 /* CardRestAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492C1DB1FB1B9310012D7C4 /* CardRestAPITest.swift */; };
 		BF1D5A491FAB5BD500D21566 /* DWAplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1D5A3F1FAB5BD500D21566 /* DWAplatform.framework */; };
 		BF1D5A4E1FAB5BD500D21566 /* DWAplatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D5A4D1FAB5BD500D21566 /* DWAplatformTests.swift */; };
 		BF1D5A501FAB5BD500D21566 /* DWAplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1D5A421FAB5BD500D21566 /* DWAplatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -18,6 +17,13 @@
 		BF1D5A631FAB5C2F00D21566 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D5A621FAB5C2F00D21566 /* Card.swift */; };
 		BF1D5A651FAB5C3E00D21566 /* CardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D5A641FAB5C3E00D21566 /* CardAPI.swift */; };
 		BF1D5A671FAB5C5000D21566 /* DWAplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1D5A661FAB5C5000D21566 /* DWAplatform.swift */; };
+		BF56D25D1FAC74990038E645 /* CardRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56D25C1FAC74990038E645 /* CardRestAPI.swift */; };
+		BF56D2611FACBA090038E645 /* SanityCheckTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56D2601FACBA090038E645 /* SanityCheckTest.swift */; };
+		BFC7792F1FB05E3B006129FC /* DateTimeConversionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7792E1FB05E3B006129FC /* DateTimeConversionTest.swift */; };
+		BFC779311FB07326006129FC /* CardHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC779301FB07326006129FC /* CardHelperTest.swift */; };
+		BFC779331FB3585C006129FC /* CardAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC779321FB3585C006129FC /* CardAPITest.swift */; };
+		BFC779351FB35D24006129FC /* CardRestApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC779341FB35D24006129FC /* CardRestApiMock.swift */; };
+		BFC779371FB35EBA006129FC /* CardHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC779361FB35EBA006129FC /* CardHelperMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWAplatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWAplatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		591C9A5979F0AA116B3D31D2 /* Pods-DWAplatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatform/Pods-DWAplatform.debug.xcconfig"; sourceTree = "<group>"; };
 		6167DF79194ADAAD275106FB /* Pods-DWAplatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests.release.xcconfig"; sourceTree = "<group>"; };
 		6F7CA881489DC6A2F280C5F6 /* Pods-DWAplatformTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatformTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatformTests/Pods-DWAplatformTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B492C1DB1FB1B9310012D7C4 /* CardRestAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRestAPITest.swift; sourceTree = "<group>"; };
 		BCD6C662BF44B2D8295C06D8 /* Pods-DWAplatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWAplatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-DWAplatform/Pods-DWAplatform.release.xcconfig"; sourceTree = "<group>"; };
 		BF1D5A3F1FAB5BD500D21566 /* DWAplatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DWAplatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1D5A421FAB5BD500D21566 /* DWAplatform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWAplatform.h; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		BF1D5A621FAB5C2F00D21566 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BF1D5A641FAB5C3E00D21566 /* CardAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAPI.swift; sourceTree = "<group>"; };
 		BF1D5A661FAB5C5000D21566 /* DWAplatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWAplatform.swift; sourceTree = "<group>"; };
+		BF56D25C1FAC74990038E645 /* CardRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRestAPI.swift; sourceTree = "<group>"; };
+		BF56D2601FACBA090038E645 /* SanityCheckTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanityCheckTest.swift; sourceTree = "<group>"; };
+		BFC7792E1FB05E3B006129FC /* DateTimeConversionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeConversionTest.swift; sourceTree = "<group>"; };
+		BFC779301FB07326006129FC /* CardHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHelperTest.swift; sourceTree = "<group>"; };
+		BFC779321FB3585C006129FC /* CardAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAPITest.swift; sourceTree = "<group>"; };
+		BFC779341FB35D24006129FC /* CardRestApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRestApiMock.swift; sourceTree = "<group>"; };
+		BFC779361FB35EBA006129FC /* CardHelperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHelperMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC20DD7FD7DDE9D299110F5 /* Pods_DWAplatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +76,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1D5A491FAB5BD500D21566 /* DWAplatform.framework in Frameworks */,
-				4888D5A84CD89F020F464022 /* Pods_DWAplatformTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +85,16 @@
 		3C22820B961C415705438156 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				32D66719126BCD6385247C11 /* Pods_DWAplatform.framework */,
-				4D7751D1F80E0547D107DF72 /* Pods_DWAplatformTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B492C1DD1FB1B93E0012D7C4 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				B492C1DB1FB1B9310012D7C4 /* CardRestAPITest.swift */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		B5E578ADFC4DCC37BEA6CE25 /* Pods */ = {
@@ -115,6 +131,7 @@
 		BF1D5A411FAB5BD500D21566 /* DWAplatform */ = {
 			isa = PBXGroup;
 			children = (
+				BF56D25B1FAC74170038E645 /* api */,
 				BF1D5A661FAB5C5000D21566 /* DWAplatform.swift */,
 				BF1D5A601FAB5C2F00D21566 /* card */,
 				BF1D5A421FAB5BD500D21566 /* DWAplatform.h */,
@@ -126,6 +143,7 @@
 		BF1D5A4C1FAB5BD500D21566 /* DWAplatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				BF56D25E1FACB8D30038E645 /* card */,
 				BF1D5A4D1FAB5BD500D21566 /* DWAplatformTests.swift */,
 				BF1D5A4F1FAB5BD500D21566 /* Info.plist */,
 			);
@@ -158,6 +176,36 @@
 				BF1D5A621FAB5C2F00D21566 /* Card.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		BF56D25B1FAC74170038E645 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				BF56D25C1FAC74990038E645 /* CardRestAPI.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		BF56D25E1FACB8D30038E645 /* card */ = {
+			isa = PBXGroup;
+			children = (
+				BF56D25F1FACB9DA0038E645 /* helpers */,
+				B492C1DD1FB1B93E0012D7C4 /* api */,
+				BFC779321FB3585C006129FC /* CardAPITest.swift */,
+				BFC779341FB35D24006129FC /* CardRestApiMock.swift */,
+				BFC779361FB35EBA006129FC /* CardHelperMock.swift */,
+			);
+			path = card;
+			sourceTree = "<group>";
+		};
+		BF56D25F1FACB9DA0038E645 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BF56D2601FACBA090038E645 /* SanityCheckTest.swift */,
+				BFC7792E1FB05E3B006129FC /* DateTimeConversionTest.swift */,
+				BFC779301FB07326006129FC /* CardHelperTest.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8E919D5B8B4AAA4B69AE3D08 /* [CP] Embed Pods Frameworks */ = {
@@ -343,7 +391,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -353,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF56D25D1FAC74990038E645 /* CardRestAPI.swift in Sources */,
 				BF1D5A5E1FAB5C0500D21566 /* DataTimeConversion.swift in Sources */,
 				BF1D5A651FAB5C3E00D21566 /* CardAPI.swift in Sources */,
 				BF1D5A5D1FAB5C0500D21566 /* CardHelper.swift in Sources */,
@@ -366,6 +415,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC779331FB3585C006129FC /* CardAPITest.swift in Sources */,
+				BF56D2611FACBA090038E645 /* SanityCheckTest.swift in Sources */,
+				BFC779311FB07326006129FC /* CardHelperTest.swift in Sources */,
+				BFC779371FB35EBA006129FC /* CardHelperMock.swift in Sources */,
+				BFC7792F1FB05E3B006129FC /* DateTimeConversionTest.swift in Sources */,
+				BFC779351FB35D24006129FC /* CardRestApiMock.swift in Sources */,
+				B492C1DC1FB1B9310012D7C4 /* CardRestAPITest.swift in Sources */,
 				BF1D5A4E1FAB5BD500D21566 /* DWAplatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

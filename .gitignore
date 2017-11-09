@@ -9,3 +9,8 @@ profile
 DerivedData
 
 xcuserdata/
+DWAplatform.xcodeproj/project.xcworkspace/
+DWAplatform.xcworkspace/
+Podfile.lock
+Pods/
+
