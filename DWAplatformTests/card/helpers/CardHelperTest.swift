@@ -34,9 +34,8 @@ class CardHelperTest : XCTestCase {
         // When
         do{
             try cardHelper.checkCardNumberFormat(cardNumber: cardNumb)
-            XCTFail()
         } catch {
-            XCTAssertNil(error)
+            XCTFail()
         }
     }
     
