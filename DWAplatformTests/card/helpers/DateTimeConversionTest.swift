@@ -14,22 +14,15 @@ class DateTimeConversionTest : XCTestCase {
     }
     
     func test_convert2RFC3339() {
-        var component = DateComponents()
-        component.day = 07
-        component.month = 05
-        component.year = 2017
-        component.timeZone = TimeZone(abbreviation: "CET")
-        var cal = Calendar.current
-        cal.timeZone = TimeZone(abbreviation: "CET")!
-
-        var date = cal.date(from: component)!
-        let calendar = Calendar.current
-        date = calendar.date(bySettingHour: 11, minute: 00, second: 30, of: date)!
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssXXX"
+        let date = dateFormatter.date(from: "2017-11-06T11:00:30+00:00")
+        
         // When
-        let dateConverted = DateTimeConversion.init().convert2RFC3339(ts: date)
+        let dateConverted = DateTimeConversion.init().convert2RFC3339(ts: date!)
                 print(dateConverted)
         // Then
-        XCTAssertTrue(dateConverted.contains("2017-05-07"))
+        XCTAssertTrue(dateConverted.contains("2017-11-06"))
         
     }
     
