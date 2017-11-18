@@ -1,5 +1,8 @@
 DWAplatform iOS SDK
 =================================================
+
+[![Build Status](https://api.travis-ci.org/DWAplatform/dwaplatform-sdk-ios.svg?branch=master)](https://travis-ci.org/DWAplatform/dwaplatform-sdk-ios)
+
 DWAplatform is an iOS client library to work with DWAplatform.
 
 Installation
